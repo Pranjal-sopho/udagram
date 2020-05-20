@@ -9,6 +9,7 @@ COPY udagram-frontend/package*.json ./
 RUN npm ci
 # Bundle app source
 COPY . .
+RUN ionic init
 RUN ionic build
 
 ## Run
