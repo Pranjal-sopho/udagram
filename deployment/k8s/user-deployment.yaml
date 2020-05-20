@@ -14,6 +14,7 @@ spec:
       labels:
         service: udagram-user
     spec:
+      restartPolicy: Always
       containers:
       - image: pranjal121997/udagram-user
         name: udagram-user
@@ -60,10 +61,10 @@ spec:
           - name: aws-secret
             mountPath: "/root/.aws/"
             readOnly: true        
-        restartPolicy: Always
-        volumes:
-        - name: aws-secret
-          secret:
-            secretName: aws-secret
-      restartPolicy: Always
+        #restartPolicy: Always
+      volumes:
+      - name: aws-secret
+        secret:
+          secretName: aws-secret
+      
 

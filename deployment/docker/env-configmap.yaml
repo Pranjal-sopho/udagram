@@ -9,8 +9,6 @@ data:
   POSTGRESS_DATABASE: udagrampranjal0
   POSTGRESS_DB: udagrampranjal0
   POSTGRESS_HOST: udagrampranjal0.c9wo1siuavas.ap-south-1.rds.amazonaws.com'
-#  POSTGRESS_USERNAME: udagrampranjal0
-#  POSTGRESS_PASSWORD: amazon.com
   URL: http://localhost:8100
 metadata:
   name: env-config
